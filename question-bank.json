@@ -298,6 +298,17 @@
             "How many cells are in the typical human body?": 13,
             "If every person who ever lived crowded together in one spot, how much area would be covered, in terms of the area of Rhode Island?": 1,
             "How many pennies would it take to create a walkable bridge from Boston, MA to Portugal, assuming that pennies sink (and that you therefore must stack pennies from the bottom of the ocean floor)": 16
+        },
+        "MIT22": {
+            "How many total miles were travelled by Div C teams to the 2015 National Tournament in Lincoln, NE?": 5,
+            "How many alumni of SciOly are there?": 6,
+            "How much Google Drive space has MIT Science Olympiad used over the years since its inception in zettabytes?": -11,
+            "How many views does the first video on YouTube have?": 8,
+            "How spicy, in Scoville units, is the spiciest Big Mac in the world?": 7,
+            "How many molecules of methane are released into the atmosphere each year due to cow manure?": 34,
+            "Calculate how much the global sea level would rise in centimeters should all the ice in the Arctic melt.": 0,
+            "How many viruses would you expect to find within a cubic meter of surface seawater?": 13,
+            "how many nitrogen atoms does a human inhale in the average breath?": 22
         }
     },
     "sources": {

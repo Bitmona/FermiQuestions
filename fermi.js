@@ -2,7 +2,7 @@ let questions = [];
 let question = {};
 let sources = {};
 const question_bank_url =
-    'https://raw.githubusercontent.com/EricAndrechek/FermiQuestions/main/question-bank.json';
+    'https://raw.githubusercontent.com/Bitmona/FermiQuestions/main/question-bank.json';
 
 // get question bank
 function getQuestions() {

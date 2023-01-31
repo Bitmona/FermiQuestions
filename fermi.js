@@ -13,11 +13,6 @@ function getQuestions() {
         })
         .then(function (json) {
             main(json);
-        })
-        .catch(function (ex) {
-            alert('parsing failed', ex);
-            document.getElementById('fermi-question').innerHTML =
-                'Failed to load question bank. Refresh clear your cache and reload the page to try again. <br>If this issue persists, please <a href="https://github.com/EricAndrechek/FermiQuestions/issues">report the issue</a>.';
         });
 }
 

@@ -8,14 +8,14 @@ const question_bank_url =
 function getQuestions() {
     fetch(question_bank_url)
         .then(function (response) {
-            console.log(response);
+            alert(response);
             return response.json();
         })
         .then(function (json) {
             main(json);
         })
         .catch(function (ex) {
-            console.log('parsing failed', ex);
+            alert('parsing failed', ex);
             document.getElementById('fermi-question').innerHTML =
                 'Failed to load question bank. Refresh clear your cache and reload the page to try again. <br>If this issue persists, please <a href="https://github.com/EricAndrechek/FermiQuestions/issues">report the issue</a>.';
         });

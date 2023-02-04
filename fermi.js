@@ -56,7 +56,6 @@ ready(function () {
 
 // receive question bank and shuffle it, beginning the game
 function main(questions_json) {
-    questions_json = JSON.parse(questions_json);
     const raw_questions = questions_json['questions'];
     sources = questions_json['sources'];
     for (const source in raw_questions) {

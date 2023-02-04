@@ -8,11 +8,16 @@ const question_bank_url =
 function getQuestions() {
     fetch(question_bank_url)
         .then(function (response) {
-            alert(response);
+            console.log(response);
             return response.json();
         })
         .then(function (json) {
             main(json);
+        })
+        .catch(function (ex) {
+            console.log('parsing failed', ex);
+            document.getElementById('fermi-question').innerHTML =
+                'Failed to load question bank. Refresh clear your cache and reload the page to try again. <br>If this issue persists, please <a href="https://github.com/EricAndrechek/FermiQuestions/issues">report the issue</a>.';
         });
 }
 
@@ -51,6 +56,7 @@ ready(function () {
 
 // receive question bank and shuffle it, beginning the game
 function main(questions_json) {
+    questions_json = JSON.parse(questions_json);
     const raw_questions = questions_json['questions'];
     sources = questions_json['sources'];
     for (const source in raw_questions) {
